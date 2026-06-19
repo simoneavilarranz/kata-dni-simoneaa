@@ -1,23 +1,37 @@
 .dni-form {
 
+    position: fixed;
+    inset: 0px;
     margin: auto;
     border-radius: var(--rounded);
     background-color: var(--card-bg-color);
     max-width: 50%;
-    min-height: 200px;
+    min-height: 100px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid var(--off-white);
     box-shadow: var(--shadow);
-    align-content: center;
+    align-self: center;
+
+}
+
+.intro-form {
+
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
 
 }
 
 .heading-form {
 
     font-size: 20px;
+    border-bottom: 1px solid var(--off-white);
+    padding-bottom: 10px;
 
 }
 
@@ -27,13 +41,34 @@ h2 {
 
 }
 
-.button-form {
+button {
 
     background-color: var(--orange);
     min-width: 25%;
     max-width: 50%;
     align-self: center;
     border-radius: 3px;
-    border: 0px none;
+    border: 1px solid var(--off-white);
+
+}
+
+#calculator {
+
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#calculate-button {
+
+    background-color: var(--green);
+
+}
+
+#cancel-button {
+
+    background-color: var(--blue);
 
 }
