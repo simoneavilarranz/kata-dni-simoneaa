@@ -2,11 +2,15 @@
 
 
 :root {
- 
+
     --main-font: "Roboto Mono", sans-serif;
-    --bg-color: #484d58;
+    --bg-color: #383e4a;
     --card-bg-color: #1f222a;
     --off-white: #dde2ec;
+    --orange: #f0a133;
+    --blue: #4d79e9;
+    --rounded: 8px;
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
@@ -15,7 +19,14 @@ body {
     background-color: var(--bg-color);
     font-family: var(--main-font);
     color: var(--off-white);
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: lighter;
     text-align: center;
 
+}
+
+h1,
+h2 {
+    padding: 0px;
+    margin: 0px;
 }

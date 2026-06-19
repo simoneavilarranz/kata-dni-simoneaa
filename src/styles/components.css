@@ -1,0 +1,39 @@
+.dni-form {
+
+    margin: auto;
+    border-radius: var(--rounded);
+    background-color: var(--card-bg-color);
+    max-width: 50%;
+    min-height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--off-white);
+    box-shadow: var(--shadow);
+    align-content: center;
+
+}
+
+.heading-form {
+
+    font-size: 20px;
+
+}
+
+h2 {
+
+    font-size: 15px;
+
+}
+
+.button-form {
+
+    background-color: var(--orange);
+    min-width: 25%;
+    max-width: 50%;
+    align-self: center;
+    border-radius: 3px;
+    border: 0px none;
+
+}
