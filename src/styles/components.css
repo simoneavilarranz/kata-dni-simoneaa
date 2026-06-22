@@ -64,11 +64,46 @@ button {
 #calculate-button {
 
     background-color: var(--green);
+    margin-bottom: 5px;
 
 }
 
 #cancel-button {
 
     background-color: var(--blue);
+
+}
+
+#number-form {
+
+    min-width: 70%;
+    margin: auto;
+
+}
+
+input[type=text],
+textarea {
+
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+
+}
+
+input[type=text]:focus,
+textarea:focus {
+
+    box-shadow: 0 0 5px var(--orange);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid var(--orange);
+
+}
+
+button:hover {
+
+    filter: brightness(115%);
 
 }

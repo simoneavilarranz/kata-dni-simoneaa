@@ -7,7 +7,7 @@ function openTest() {
 
 function closeTest() {
     document.getElementById("calculator").style.display = "none";
-    document.getElementById("button-call").style.display = "flex";
+    document.getElementById("button-call").style.display = "block";
 }
 
 document.getElementById('button-call').addEventListener('click', openTest);
