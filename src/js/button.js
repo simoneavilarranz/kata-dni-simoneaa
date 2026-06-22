@@ -1,7 +1,14 @@
-document.getElementById("test").style.display ="none";
+document.getElementById("calculator").style.display ="none";
 
 function openTest() {
-    document.getElementById("test").style.display = "block";
+    document.getElementById("calculator").style.display = "flex";
+    document.getElementById("button-call").style.display = "none";
 }
 
-document.getElementById('btn').addEventListener('click', openTest);
+function closeTest() {
+    document.getElementById("calculator").style.display = "none";
+    document.getElementById("button-call").style.display = "flex";
+}
+
+document.getElementById('button-call').addEventListener('click', openTest);
+document.getElementById('cancel-button').addEventListener('click', closeTest);
