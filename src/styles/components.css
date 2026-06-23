@@ -55,6 +55,7 @@ button {
 #calculator {
 
     min-height: 100px;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     margin-top: 0px;

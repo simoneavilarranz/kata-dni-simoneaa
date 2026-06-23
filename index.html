@@ -15,14 +15,17 @@
             <h2>Calcula tu letra del DNI</h2>
             <button type="button" id="button-call">Iniciar</button>
         </div>
-        <div id="calculator" >
+        <div id="calculator">
             <label for="numero">Introduce un número:</label><br>
             <input type="text" id="number-form" name="numero" placeholder="ej: 12345678">
             <button type="button" id="calculate-button">Calcular</button>
             <button type="button" id="cancel-button">Cancelar</button>
         </div>
     </form>
-    <script src="./src/js/button.js"></script>
+    <script type="module">
+        import { init } from './src/js/button.js';
+        init();
+    </script>
 </body>
 
 </html>
