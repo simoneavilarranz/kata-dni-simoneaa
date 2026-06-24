@@ -1,8 +1,9 @@
-const emailInput = document.getElementById('login-email');
-const passwordInput = document.getElementById('login-password');
-const rememberCheckbox = document.getElementById('login-remember');
+const numbInput = document.getElementById('number-form');
 const errorMessage = document.getElementById('error-message');
-const loginBtn = document.getElementById('login-btn');
+const calculateButton = document.getElementById('calculate-button');
+/*const passwordInput = document.getElementById('login-password');
+const rememberCheckbox = document.getElementById('login-remember');
+const loginBtn = document.getElementById('login-btn');*/
 
 function showError(message) {
     errorMessage.textContent = message;
@@ -14,21 +15,21 @@ function hideError() {
     errorMessage.style.display = 'none';
 }
 
-loginBtn.addEventListener('click', async function() {
+calculateButton.addEventListener('click', async function() {
     hideError();
     
-    const email = emailInput.value.trim();
-    const password = passwordInput.value;
+    const invalidNumb = Number.length != 8;
+    const invalidString = !Number;
     
-    if (!email) {
-        showError('Please enter your email address');
-        emailInput.focus();
+    if (invalidNumb) {
+        showError('Introduce un número de 8 dígitos');
+        numbInput.focus();
         return;
     }
     
-    if (!password) {
-        showError('Please enter your password');
-        passwordInput.focus();
+    if (invalidString) {
+        showError('Introduce un número valido');
+        numbInput.focus();
         return;
     }
 })
