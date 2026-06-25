@@ -18,9 +18,9 @@
 body {
 
     background-color: var(--bg-color);
+    font-size: 25px;
     font-family: var(--main-font);
     color: var(--off-white);
-    font-size: 15px;
     font-weight: lighter;
     text-align: center;
 

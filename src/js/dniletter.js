@@ -3,6 +3,7 @@ console.log("dniletter.js cargado");
 const numbInput = document.getElementById("number-form");
 const resultMessage = document.getElementById("result-message");
 const calculateButton = document.getElementById("calculate-button");
+const letterList = "TRWAGMYFPDXBNJZSQVHLCKE";
 
 export function showResult(message) {
   resultMessage.textContent = message;
@@ -13,8 +14,6 @@ export function hideResult() {
   resultMessage.textContent = "";
   resultMessage.style.display = "none";
 }
-
-const letterList = "TRWAGMYFPDXBNJZSQVHLCKE";
 
 export function dniLetter() {
   let numbResult = parseInt(numbInput.value) % 23;

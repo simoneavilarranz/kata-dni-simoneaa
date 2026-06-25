@@ -27,7 +27,7 @@
 
 .heading-form {
 
-    font-size: 20px;
+    font-size: 40px;
     border-bottom: 1px solid var(--off-white);
     padding-bottom: 10px;
     margin-bottom: 15px;
@@ -36,8 +36,14 @@
 
 h2 {
 
-    font-size: 15px;
+    font-size: 30px;
     margin-bottom: 15px;
+
+}
+
+label, input {
+
+    font-size: 25px;
 
 }
 
@@ -47,8 +53,9 @@ button {
     min-width: 25%;
     max-width: 50%;
     align-self: center;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid var(--off-white);
+    font-size: 25px;
 
 }
 
@@ -64,8 +71,7 @@ button {
 
 #result-message {
 
-    font-size: 12px;
-    margin: 10px;
+    margin: 20px;
 
 }
 
@@ -85,6 +91,7 @@ button {
 #number-form {
 
     min-width: 70%;
+    min-height: 30px;
     margin: auto;
     margin-top: 10px;
 
