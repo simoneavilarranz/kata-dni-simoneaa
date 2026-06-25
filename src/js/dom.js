@@ -1,4 +1,4 @@
-import { dniLetter } from "./calculadora.js";
+import { dniLetter } from "./calculator.js";
 import { showResult, hideResult } from "./message.js";
 
 const numbInput = document.getElementById("number-form");
