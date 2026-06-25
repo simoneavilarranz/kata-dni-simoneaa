@@ -1,12 +1,11 @@
 import { dniLetter } from "./calculator.js";
 import { showResult, hideResult } from "./message.js";
 
-const numbInput = document.getElementById("number-form");
-const calculateButton = document.getElementById("calculate-button");
-
 export function initCalculator() {
+    const numbInput = document.getElementById("number-form");
+    const calculateButton = document.getElementById("calculate-button");
+
     calculateButton.addEventListener("click", function () {
-        hideResult();
 
         if (!/^\d{8}$/.test(numbInput.value)) {
             showResult("El dato introducido es incorrecto");
