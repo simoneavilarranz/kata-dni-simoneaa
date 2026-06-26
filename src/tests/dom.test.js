@@ -5,7 +5,7 @@ import { initCalculator } from "../js/dom.js";
 import { showResult } from "../js/message.js";
 
 describe("InvalidNumber", () => {
-  it("should show error for invalid input", () => {
+  it("should show error", () => {
     document.body.innerHTML = '<input type="text" id="number-form"><div id="result-message"></div><button type="button" id="calculate-button">Calcular</button>';
     initCalculator();
     const numbInput = document.getElementById("number-form");

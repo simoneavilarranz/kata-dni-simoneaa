@@ -7,7 +7,9 @@ export function initCalculator() {
 
     calculateButton.addEventListener("click", function () {
 
-        if (!/^\d{8}$/.test(numbInput.value)) {
+        const numero = parseInt(numbInput.value);
+
+        if (isNaN(numero) || numero < 0 || numero > 99999999) {
             showResult("El dato introducido es incorrecto");
             numbInput.focus();
             return;
